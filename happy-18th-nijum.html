@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>Happy 18th, Nijum</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0a1236;--navy2:#18246b;--lilac:#c3b2f2;--white:#f8f6ff;--gold:#d8b45a;--gold2:#f4de9c;--black:#0d0d1c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+html.lock,html.lock body{overflow:hidden;height:100%}
+body{margin:0;overflow-x:hidden;background:radial-gradient(120% 80% at 50% 0%,#2a3a9a 0%,var(--navy2) 35%,var(--navy) 100%) fixed,var(--navy);color:var(--white);font-family:'Cormorant Garamond',Georgia,serif;min-height:100vh}
+main{max-width:480px;margin:0 auto;padding:18px 18px 60px;text-align:center}
+.sky{position:relative;height:130px;--bs:clamp(18px,5vw,28px);pointer-events:none;z-index:30}
+.bw{position:absolute;top:0;width:var(--bs);will-change:transform}
+.b{position:relative;width:100%;aspect-ratio:5/6;border-radius:50% 50% 48% 48%/45% 45% 55% 55%;background:radial-gradient(circle at 32% 26%,rgba(255,255,255,.8),transparent 26%),var(--c);box-shadow:inset -3px -4px 7px rgba(0,0,0,.3);animation:bob 3s ease-in-out infinite alternate}
+.b::after{content:"";position:absolute;left:50%;top:100%;width:1px;height:34px;background:rgba(255,255,255,.4)}
+@keyframes bob{to{transform:translateY(-5px) rotate(2deg)}}
+.rv{opacity:0;transform:translateY(14px);transition:opacity 1.4s ease,transform 1.4s ease}
+.rv.on{opacity:1;transform:none}
+h1{font-family:'Great Vibes',cursive;font-weight:400;font-size:clamp(3.4rem,17vw,5.6rem);line-height:1.05;margin:6px 0 0;color:var(--white);text-shadow:0 0 28px rgba(195,178,242,.55)}
+.name{font-weight:700;font-size:clamp(1.55rem,7.2vw,2.3rem);letter-spacing:.06em;margin:10px 0 6px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.orn{width:120px;height:1px;margin:10px auto 14px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.sub{font-style:italic;font-size:1.2rem;color:var(--lilac);margin:0 0 4px}
+.count{font-size:1.05rem;color:var(--gold2);margin:0 0 20px;min-height:1.4em}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;perspective:600px}
+.env{position:relative;aspect-ratio:4/3;border:1px solid var(--gold);border-radius:6px;background:linear-gradient(150deg,#26358f,#101a52);cursor:pointer;padding:0;overflow:hidden;color:var(--navy);font-family:inherit;box-shadow:0 8px 18px rgba(0,0,0,.35);opacity:0;transform:translateY(16px);transition:opacity .8s ease,transform .8s ease,filter .5s}
+.env::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#4a5bc0,#2c3b9c);clip-path:polygon(0 0,100% 0,50% 60%);transform-origin:top;transition:transform .6s ease}
+.env::after{content:"";position:absolute;inset:0;background:linear-gradient(35deg,rgba(255,255,255,.07),transparent 50%)}
+.seal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:34px;height:34px;border-radius:50%;background:radial-gradient(circle at 35% 30%,var(--gold2),var(--gold) 65%,#a8832e);display:grid;place-items:center;font-weight:700;font-size:1.1rem;box-shadow:0 2px 6px rgba(0,0,0,.4)}
+.grid.on .env{opacity:1;transform:none;transition-delay:calc(var(--i)*70ms)}
+.grid.on .env:active{transform:scale(.94);transition-delay:0s}
+.env.done{filter:saturate(.5) brightness(.8)}
+.env.done::before{transform:scaleY(.02)}
+.env:focus-visible,.x:focus-visible,#snd:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+.fin{margin-top:28px}
+.fin button{border:1px solid var(--gold);border-radius:999px;padding:12px 26px;background:transparent;color:var(--gold2);font:700 1.15rem 'Cormorant Garamond',serif;cursor:pointer}
+dialog{border:0;padding:0;border-radius:18px;max-width:440px;width:calc(100% - 32px);background:var(--white);color:var(--navy);box-shadow:0 0 0 1px var(--gold),0 0 0 6px var(--white),0 0 0 7px var(--gold),0 24px 70px rgba(0,0,0,.6)}
+dialog::backdrop{background:rgba(6,10,36,.75)}
+.bar{height:8px;background:linear-gradient(90deg,var(--gold),var(--gold2),var(--gold))}
+.body{padding:24px 26px 26px;text-align:center}
+.tag{margin:0 0 12px;font-style:italic;font-weight:700;color:#5a45a8;font-size:1.1rem}
+.wish{margin:0 0 22px;font-size:1.5rem;line-height:1.45;font-weight:500}
+.x{border:0;border-radius:999px;padding:10px 26px;background:var(--navy2);color:var(--gold2);font:700 1.1rem 'Cormorant Garamond',serif;cursor:pointer}
+#snd{position:fixed;top:calc(10px + env(safe-area-inset-top,0px));right:12px;z-index:60;width:40px;height:40px;border-radius:50%;border:1px solid var(--gold);background:rgba(10,18,54,.7);color:var(--gold2);font-size:1.1rem;cursor:pointer}
+#gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;text-align:center;padding:24px;background:radial-gradient(120% 80% at 50% 0%,#2a3a9a,var(--navy2) 40%,var(--navy));transition:opacity 1s}
+#gate.out{opacity:0;pointer-events:none}
+#gate p{margin:0 0 6px;color:var(--lilac);font-style:italic;font-size:1.25rem}
+#gate h2{font-family:'Great Vibes',cursive;font-weight:400;font-size:2.8rem;margin:0 0 22px;color:var(--gold2)}
+#gate button{border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold),var(--gold2));color:var(--navy);border-radius:999px;padding:14px 34px;font:700 1.25rem 'Cormorant Garamond',serif;cursor:pointer}
+#gate small{display:block;margin-top:16px;color:var(--lilac);font-size:1rem}
+#cv{position:fixed;inset:0;pointer-events:none;z-index:40}
+@media (prefers-reduced-motion:reduce){.rv,.env{transition:none}.b{animation:none}}
+</style>
+</head>
+<body>
+<div id="gate">
+  <div>
+    <p>A little surprise for</p>
+    <h2>Jannatul Ferdous Nijum</h2>
+    <button id="go">Open</button>
+    <small>Turn your sound on 🔊<br>If you hear nothing, check that your phone isn’t on silent.</small>
+  </div>
+</div>
+<button id="snd" aria-label="Mute or unmute sound">🔊</button>
+<main>
+  <div class="sky" id="sky"></div>
+  <h1 class="rv" id="t1">Happy Birthday</h1>
+  <div class="name rv" id="t2">Jannatul Ferdous Nijum</div>
+  <div class="orn rv" id="t3"></div>
+  <p class="sub rv" id="t4">Eighteen envelopes, one for every year. Tap to open each one.</p>
+  <p class="count rv" id="count">0 of 18 opened</p>
+  <div class="grid" id="grid"></div>
+  <div class="fin" id="fin" hidden><button id="again">Celebrate again</button></div>
+</main>
+<dialog id="dlg">
+  <div class="bar"></div>
+  <div class="body">
+    <p class="tag" id="tag"></p>
+    <p class="wish" id="wish"></p>
+    <button class="x" id="close">Close</button>
+  </div>
+</dialog>
+<canvas id="cv"></canvas>
+<script>
+var W=[
+["Dua","Happy birthday, Niju dear. I make dua for you that you can enjoy your very first year of adulthood with peace and happiness."],
+["Quran","Eighteen years old today, and I pray Allah fills every year ahead with barakah. “Verily, Allah is with those who are patient” (Quran 2:153). Keep trusting Him, always."],
+["Quran","Happy birthday, my dear friend. May your heart stay close to Allah and your life stay full of light. “Allah does not burden a soul beyond what it can bear” (Quran 2:286). You are stronger than you know."],
+["Quran","Happy 18th birthday! May Allah make this chapter your best one yet. “Indeed, with hardship comes ease” (Quran 94:6). Whatever you’ve been through, ease is already written for you."],
+["Hadith","The Prophet ﷺ said, “The best of people are those who are most beneficial to others.” May you grow into someone who spreads goodness everywhere. Happy 18th!"],
+["Keep going","Life hasn’t always been easy for you, and you kept going anyway. That’s real strength. Happy 18th! Never stop, because your best days haven’t even started."],
+["Keep going","Happy birthday! Remember, a hard chapter is not the end of your story. Every fall you’ve had was just training for how high you’ll rise."],
+["Keep going","You’re 18 now, and the world is open for you. If you ever feel like giving up, remember how far you’ve already come. I’m always in your corner."],
+["Keep going","Eighteen years of surviving, learning, and growing. Whatever storms came, you’re still here and still shining. Keep going, my friend. You were made for this."],
+["Quote","“The future belongs to those who believe in the beauty of their dreams.” (Eleanor Roosevelt) Happy 18th! Believe in yours fully."],
+["Quote","“It always seems impossible until it’s done.” (Nelson Mandela) Go after every big dream this year, and don’t let doubt win. Happy birthday!"],
+["Quote","“Fall seven times, stand up eight.” (Japanese proverb) That’s you, and it’s why I’m so proud of you. Happy 18th!"],
+["Quote","“You are braver than you believe, stronger than you seem, and smarter than you think.” (A. A. Milne) Never forget it. Happy birthday, my friend!"],
+["Cheers","Happy 18th! You’re officially an adult, which means you can now say “I’m adulting” whenever you avoid something. Enjoy it, and let’s celebrate big today!"],
+["Cheers","Eighteen looks amazing on you! Cake, laughter, and zero stress today. You deserve all of it. Happy birthday, bestie!"],
+["Cheers","Welcome to 18, the age of big dreams and bigger snacks! Thank you for being the best part of my life. Let’s make today unforgettable!"],
+["From my heart","You’ve been my safe place, my laughter, and my biggest support. Having you in my life is one of Allah’s greatest gifts to me. Happy 18th, and I’ll always be here for you."],
+["From my heart","Today I celebrate you: your kindness, your strength, and your beautiful heart. May Allah protect you, guide you, and make every dream of yours come true. Happy birthday, my forever friend. 🤍"]
+];
+var RM=matchMedia('(prefers-reduced-motion:reduce)').matches,K=RM?0:1;
+var $=function(i){return document.getElementById(i)};
+var opened={},nOpen=0,fin=false,started=false;
+
+/* ---------- envelopes ---------- */
+var grid=$('grid');
+W.forEach(function(w,i){
+  var b=document.createElement('button');
+  b.className='env';b.style.setProperty('--i',i);
+  b.setAttribute('aria-label','Open wish '+(i+1));
+  b.innerHTML='<span class="seal">'+(i+1)+'</span>';
+  b.onclick=function(){openWish(i,b)};
+  grid.appendChild(b);
+});
+function openWish(i,b){
+  if(!opened[i]){opened[i]=1;nOpen++}
+  b.classList.add('done');
+  $('tag').textContent='Wish '+(i+1)+' of 18 · '+W[i][0];
+  $('wish').textContent=W[i][1];
+  $('close').textContent=(nOpen==18&&!fin)?'Finish':'Close';
+  $('count').textContent=nOpen+' of 18 opened';
+  wake();
+  chime(i);
+  $('dlg').showModal();
+}
+$('close').onclick=function(){tone(659.25,.5,.07);$('dlg').close()};
+$('dlg').addEventListener('click',function(e){if(e.target===this)this.close()});
+$('dlg').addEventListener('close',function(){
+  if(nOpen==18&&!fin){
+    fin=true;$('fin').hidden=false;
+    $('count').textContent='All 18 opened. Happy birthday, Nijum!';
+    celebrate();
+  }
+});
+$('again').onclick=celebrate;
+function celebrate(){fanfare();confetti()}
+
+/* ---------- audio (synthesized, no files) ---------- */
+var AC,master,mute,muted=false;
+function wake(){if(AC&&AC.state!=='running'){try{AC.resume()}catch(e){}}}
+function unlockIOS(){
+  try{
+    var a=new Audio('data:audio/wav;base64,UklGRiQAAABXQVZFZm10IBAAAAABAAEARKwAAIhYAQACABAAZGF0YQAAAAA=');
+    a.play().catch(function(){});
+  }catch(e){}
+}
+function initAudio(){
+  try{
+    unlockIOS();
+    AC=new (window.AudioContext||window.webkitAudioContext)();
+    wake();
+    mute=AC.createGain();mute.connect(AC.destination);
+    master=AC.createGain();master.gain.value=.55;master.connect(mute);
+    var dl=AC.createDelay();dl.delayTime.value=.26;
+    var fb=AC.createGain();fb.gain.value=.3;
+    var lp=AC.createBiquadFilter();lp.type='lowpass';lp.frequency.value=2200;
+    master.connect(dl);dl.connect(lp);lp.connect(fb);fb.connect(dl);lp.connect(mute);
+  }catch(e){AC=null}
+}
+function bell(f,t,d,v){
+  if(!AC)return;
+  [[1,1],[2,.35],[3.01,.12]].forEach(function(p){
+    var o=AC.createOscillator(),g=AC.createGain();
+    o.type='sine';o.frequency.value=f*p[0];
+    g.gain.setValueAtTime(.0001,t);
+    g.gain.exponentialRampToValueAtTime(v*p[1],t+.012);
+    g.gain.exponentialRampToValueAtTime(.0001,t+d);
+    o.connect(g);g.connect(master);o.start(t);o.stop(t+d+.05);
+  });
+}
+function tone(f,d,v){if(AC)bell(f,AC.currentTime,d,v)}
+var PENT=[523.25,587.33,659.25,783.99,880,1046.5,1174.66,1318.5,1568,1760];
+function chime(i){
+  if(!AC)return;
+  var t=AC.currentTime,s=i%6;
+  /* paper rustle */
+  var n=AC.sampleRate*.14,buf=AC.createBuffer(1,n,AC.sampleRate),d=buf.getChannelData(0);
+  for(var k=0;k<n;k++)d[k]=(Math.random()*2-1)*(1-k/n);
+  var src=AC.createBufferSource(),bp=AC.createBiquadFilter(),g=AC.createGain();
+  bp.type='bandpass';bp.frequency.value=3200;g.gain.value=.07;
+  src.buffer=buf;src.connect(bp);bp.connect(g);g.connect(master);src.start(t);
+  [0,2,4,5].forEach(function(o,j){bell(PENT[s+o>9?9:s+o],t+.08+j*.1,1.3,.13)});
+}
+function fanfare(){
+  if(!AC)return;var t=AC.currentTime;
+  [523.25,659.25,783.99,1046.5,1318.5,1568].forEach(function(f,j){bell(f,t+j*.11,1.8,.15)});
+}
+function song(){
+  if(!AC)return;
+  var N=[[392,.75],[392,.25],[440,1],[392,1],[523.25,1],[493.88,2],
+         [392,.75],[392,.25],[440,1],[392,1],[587.33,1],[523.25,2],
+         [392,.75],[392,.25],[783.99,1],[659.25,1],[523.25,1],[493.88,1],[440,2],
+         [698.46,.75],[698.46,.25],[659.25,1],[523.25,1],[587.33,1],[523.25,3]];
+  var t=AC.currentTime+.5,beat=.52;
+  N.forEach(function(n){
+    bell(n[0],t,Math.min(2,n[1]*beat+.9),.17);
+    bell(n[0]/2,t,Math.min(2,n[1]*beat+.9),.06);
+    t+=n[1]*beat;
+  });
+}
+$('snd').onclick=function(){
+  muted=!muted;this.textContent=muted?'🔇':'🔊';
+  if(mute)mute.gain.value=muted?0:1;
+};
+
+/* ---------- confetti ---------- */
+var cv=$('cv'),cx=cv.getContext('2d'),P=[],run=false;
+var CC=['#d8b45a','#f4de9c','#c3b2f2','#f8f6ff','#4a5bc0','#0d0d1c'];
+function confetti(){
+  if(RM)return;
+  cv.width=innerWidth;cv.height=innerHeight;
+  var now=performance.now();
+  for(var i=0;i<230;i++)P.push({x:Math.random()*cv.width,y:-20-Math.random()*cv.height*.7,vy:2.6+Math.random()*3.2,ph:Math.random()*6,sw:.4+Math.random()*1.1,w:5+Math.random()*5,h:9+Math.random()*7,r:Math.random()*6,vr:(Math.random()-.5)*.2,c:CC[i%CC.length],b:now});
+  if(!run){run=true;requestAnimationFrame(tick)}
+}
+function tick(now){
+  cx.clearRect(0,0,cv.width,cv.height);
+  P=P.filter(function(p){return now-p.b<5200&&p.y<cv.height+30});
+  P.forEach(function(p){
+    p.y+=p.vy;p.ph+=.05;p.x+=Math.sin(p.ph)*p.sw;p.r+=p.vr;
+    var a=now-p.b<3000?1:Math.max(0,1-(now-p.b-3000)/2200);
+    cx.globalAlpha=a;cx.fillStyle=p.c;
+    cx.save();cx.translate(p.x,p.y);cx.rotate(p.r);cx.fillRect(-p.w/2,-p.h/2,p.w,p.h);cx.restore();
+  });
+  if(P.length)requestAnimationFrame(tick);else{run=false;cx.clearRect(0,0,cv.width,cv.height)}
+}
+
+/* ---------- balloons ---------- */
+var sky=$('sky'),BC=['#d8b45a','#c3b2f2','#f8f6ff','#4a5bc0','#2b3a8c','#14142b'],BW=[];
+for(var i=0;i<18;i++){
+  var w=document.createElement('div'),b=document.createElement('div');
+  w.className='bw';b.className='b';
+  b.style.setProperty('--c',BC[i%BC.length]);
+  b.style.animationDelay=(i%5*.4)+'s';
+  w.style.left='calc('+(i/17)+' * (100% - var(--bs)))';
+  w.dataset.o=Math.round(34*Math.pow((i-8.5)/8.5,2));
+  w.style.transform='translateY('+(innerHeight+220)+'px)';
+  w.appendChild(b);sky.appendChild(w);BW.push(w);
+}
+function rise(){
+  BW.forEach(function(w,i){
+    w.style.transition=RM?'none':'transform 2.4s cubic-bezier(.16,.8,.24,1) '+(i*.06)+'s';
+    w.style.transform='translateY('+w.dataset.o+'px)';
+  });
+}
+
+/* ---------- opening sequence ---------- */
+document.documentElement.classList.add('lock');
+$('go').onclick=function(){
+  if(started)return;started=true;
+  $('gate').classList.add('out');
+  initAudio();song();confetti();
+  setTimeout(rise,3600*K);
+  setTimeout(function(){$('t1').classList.add('on')},6300*K);
+  setTimeout(function(){$('t2').classList.add('on');$('t3').classList.add('on')},7300*K);
+  setTimeout(function(){$('t4').classList.add('on');$('count').classList.add('on')},8200*K);
+  setTimeout(function(){grid.classList.add('on');document.documentElement.classList.remove('lock')},8900*K);
+};
+</script>
+<script>
+/* Sound v2: songs and chimes are rendered into WAV audio and played with normal audio elements (more reliable on Android) */
+var SR=22050,cache={},songEl=null,warned=false;
+function render(ev,len){
+  var n=Math.floor(len*SR),d=new Float32Array(n),i;
+  ev.forEach(function(e){
+    var s=Math.floor(e[1]*SR),m=Math.min(n,s+Math.floor((e[2]+.1)*SR));
+    [[1,1],[2,.35],[3.01,.12]].forEach(function(p){
+      var w=2*Math.PI*e[0]*p[0]/SR,tau=e[2]/4;
+      for(var k=s;k<m;k++){var t=(k-s)/SR;d[k]+=Math.sin(w*(k-s))*e[3]*p[1]*Math.min(1,t/.012)*Math.exp(-t/tau)}
+    });
+  });
+  var D=Math.floor(.26*SR);
+  for(i=D;i<n;i++)d[i]+=d[i-D]*.3;
+  var pk=0;for(i=0;i<n;i++)pk=Math.max(pk,Math.abs(d[i]));
+  var g=pk>0?.75/pk:1;for(i=0;i<n;i++)d[i]*=g;
+  return d;
+}
+function wavBuf(d){
+  var n=d.length,b=new ArrayBuffer(44+n*2),v=new DataView(b);
+  function s(o,t){for(var i=0;i<t.length;i++)v.setUint8(o+i,t.charCodeAt(i))}
+  s(0,'RIFF');v.setUint32(4,36+n*2,true);s(8,'WAVE');s(12,'fmt ');v.setUint32(16,16,true);v.setUint16(20,1,true);v.setUint16(22,1,true);v.setUint32(24,SR,true);v.setUint32(28,SR*2,true);v.setUint16(32,2,true);v.setUint16(34,16,true);s(36,'data');v.setUint32(40,n*2,true);
+  for(var i=0;i<n;i++)v.setInt16(44+i*2,Math.max(-1,Math.min(1,d[i]))*32767,true);
+  return b;
+}
+function dataUri(b){
+  var u=new Uint8Array(b),s='';
+  for(var i=0;i<u.length;i+=8192)s+=String.fromCharCode.apply(null,u.subarray(i,i+8192));
+  return 'data:audio/wav;base64,'+btoa(s);
+}
+function mk(key,ev,len){
+  if(!cache[key]){var b=wavBuf(render(ev,len));cache[key]={b:b,u:URL.createObjectURL(new Blob([b],{type:'audio/wav'}))}}
+  return cache[key];
+}
+function warn(){
+  if(warned)return;warned=true;
+  var m=document.createElement('div');
+  m.textContent='Your browser blocked the sound. Try opening this page in Chrome.';
+  m.style.cssText='position:fixed;left:12px;right:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:200;background:#0a1236;color:#f4de9c;border:1px solid #d8b45a;border-radius:12px;padding:12px;text-align:center;font:600 1rem Georgia,serif';
+  document.body.appendChild(m);setTimeout(function(){m.remove()},6000);
+}
+function playW(c,isSong){
+  var a=new Audio(c.u);a.muted=muted;
+  if(isSong)songEl=a;
+  a.onerror=function(){a.onerror=null;a.src=dataUri(c.b);a.play().catch(warn)};
+  var p=a.play();if(p&&p.catch)p.catch(function(){if(!a.error)warn()});
+}
+var PN=[523.25,587.33,659.25,783.99,880,1046.5,1174.66,1318.5,1568,1760];
+function initAudio(){}
+function wake(){}
+function tone(f,d,v){playW(mk('t'+f,[[f,0,d,v]],d+.4),false)}
+function chime(i){
+  var s=i%6,ev=[];
+  [0,2,4,5].forEach(function(o,j){ev.push([PN[Math.min(9,s+o)],.05+j*.1,1.3,.13])});
+  playW(mk('c'+s,ev,2.8),false);
+}
+function fanfare(){
+  var ev=[];
+  [523.25,659.25,783.99,1046.5,1318.5,1568].forEach(function(f,j){ev.push([f,j*.11,1.8,.15])});
+  playW(mk('f',ev,3.4),false);
+}
+function song(){
+  var N=[[392,.75],[392,.25],[440,1],[392,1],[523.25,1],[493.88,2],
+         [392,.75],[392,.25],[440,1],[392,1],[587.33,1],[523.25,2],
+         [392,.75],[392,.25],[783.99,1],[659.25,1],[523.25,1],[493.88,1],[440,2],
+         [698.46,.75],[698.46,.25],[659.25,1],[523.25,1],[587.33,1],[523.25,3]];
+  var t=.3,beat=.52,ev=[];
+  N.forEach(function(n){
+    var d=Math.min(2,n[1]*beat+.9);
+    ev.push([n[0],t,d,.17]);ev.push([n[0]/2,t,d,.06]);
+    t+=n[1]*beat;
+  });
+  playW(mk('song',ev,t+3),true);
+}
+$('snd').onclick=function(){
+  muted=!muted;this.textContent=muted?'🔇':'🔊';
+  if(songEl)songEl.muted=muted;
+};
+</script>
+</body>
+</html>
